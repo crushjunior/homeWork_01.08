@@ -30,10 +30,9 @@ public class Main {
 
         int goal = 7000;
         int days_250 = goal / 250, days_500 = goal / 500;
-        float average = (250 + 500) / 2;
-        float averageDays = goal / average;
+        int average = (days_250 + days_500) / 2;
         System.out.println(days_250 + " дней уйдет, если сбрасыбвать по 250гр и " + days_500+ " дней потребуется, если сжигать по 500гр в день");
-        System.out.printf("В среднем постребуется %.1f дней \n", averageDays);
+        System.out.println("В среднем постребуется " + average + " день");
         System.out.println();
 
         // 5 quest
